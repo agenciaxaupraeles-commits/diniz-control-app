@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101015">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DINIZ CONTROL">
+<title>DINIZ CONTROL</title>
+<style>
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse 90% 36% at 50% -5%,#542022 0%,transparent 85%),#101015;color:#f8f8fa;min-height:100vh}
+main{max-width:510px;margin:auto;padding:calc(env(safe-area-inset-top) + 35px) 22px calc(env(safe-area-inset-bottom) + 40px)}
+header{display:flex;align-items:center;gap:13px;margin-bottom:38px}
+.logo{display:grid;place-items:center;background:#d92a38;width:46px;height:46px;border-radius:15px;font-weight:900;font-size:23px}
+h1{font-size:19px;letter-spacing:1px;margin:0}
+header p{color:#9b9ba7;font-size:12px;margin:5px 0 0}
+.topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.eyebrow{color:#a7a7b3;font-size:11px;letter-spacing:2px;font-weight:800}
+.tag{font-size:11px;color:#b7b7c0;border:1px solid #34343e;border-radius:100px;padding:6px 10px}
+.panel{border:1px solid #30303a;border-radius:26px;padding:25px;background:linear-gradient(150deg,#25252e,#17171d 75%);box-shadow:0 25px 50px #0005}
+.device{width:94px;height:94px;border-radius:26px;display:grid;place-items:center;background:#34343f;margin:0 auto 13px}
+.device svg{width:55px;height:55px;stroke:#f3f3fa;fill:none;stroke-width:1.7}
+.device-title{text-align:center;font-size:23px;font-weight:800;margin:8px 0}
+.status{text-align:center;color:#aeb0be;font-size:13px;margin:8px 0 24px}
+.status:before{content:"";display:inline-block;background:#8b8d9e;width:8px;height:8px;border-radius:50%;margin-right:9px}
+.on{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:18px;background:#df3040;color:white;padding:20px;font-size:17px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 12px 30px #e12d3c38}
+.on svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2.6}
+.hint{color:#9494a3;font-size:12px;text-align:center;line-height:1.6;margin:14px 5px 0}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.action{border:1px solid #34343e;background:#25252e;border-radius:17px;padding:17px 10px;color:#9696a2;display:flex;flex-direction:column;align-items:center;gap:9px;font-weight:700;font-size:13px}
+.action svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2}
+.section{margin-top:32px}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.extra{background:#1e1e27;border:1px solid #30303b;border-radius:19px;padding:19px;min-height:120px}
+.extra svg{width:26px;height:26px;stroke:#dedee6;fill:none;stroke-width:1.8}
+.extra strong{display:block;font-size:14px;margin-top:14px}
+.extra span{display:block;color:#8e8e9d;font-size:12px;margin-top:4px}
+footer{color:#747482;text-align:center;font-size:11px;margin-top:42px;line-height:1.7}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="logo">D</div>
+<div><h1>DINIZ CONTROL</h1><p>Seu setup. Seu controle.</p></div>
+</header>
+
+<div class="topline">
+<div class="eyebrow">MEU COMPUTADOR</div>
+<div class="tag">Wake on LAN</div>
+</div>
+
+<section class="panel">
+<div class="device">
+<svg viewBox="0 0 64 64">
+<rect x="7" y="9" width="50" height="36" rx="4"/>
+<path d="M32 45v10M20 55h24"/>
+</svg>
+</div>
+<div class="device-title">DINIZ PC</div>
+<div class="status">Status não monitorado</div>
+
+<a class="on" href="shortcuts://run-shortcut?name=Ligar%20PC">
+<svg viewBox="0 0 24 24">
+<path d="M12 2v10"/>
+<path d="M6.1 5.8a9 9 0 1 0 11.8 0"/>
+</svg>
+LIGAR MEU PC
+</a>
+
+<p class="hint">
+Abre o atalho "Ligar PC" no seu iPhone.<br>
+Use na rede Wi-Fi configurada para o Wake on LAN.
+</p>
+
+<div class="actions">
+<div class="action">
+<svg viewBox="0 0 24 24">
+<path d="M12 2v10M6.1 5.8a9 9 0 1 0 11.8 0"/>
+</svg>
+Desligar · em breve
+</div>
+<div class="action">
+<svg viewBox="0 0 24 24">
+<path d="M20 11a8 8 0 1 0-2 6M20 4v7h-7"/>
+</svg>
+Reiniciar · em breve
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="topline">
+<div class="eyebrow">MINHA CASA</div>
+<div class="tag">Em breve</div>
+</div>
+<div class="extras">
+<div class="extra">
+<svg viewBox="0 0 24 24">
+<rect x="2" y="3" width="20" height="15" rx="2"/>
+<path d="M8 22h8m-4-4v4"/>
+</svg>
+<strong>Smart TV</strong>
+<span>Aguardando integração</span>
+</div>
+<div class="extra">
+<svg viewBox="0 0 24 24">
+<rect x="3" y="3" width="18" height="8" rx="2"/>
+<path d="M7 15v6m5-8v8m5-6v6"/>
+</svg>
+<strong>Ar-condicionado</strong>
+<span>Aguardando integração</span>
+</div>
+</div>
+</section>
+
+<footer>
+DINIZ CONTROL • v1.0<br>
+Interface pessoal de automação
+</footer>
+</main>
+</body>
+</html>
